@@ -36,7 +36,7 @@ Reviews pull requests for software that moves physical machines. Asks not just
     python -m rosguard.github_app            # point a pull_request webhook at :8080
 Or in CI: `rosguard diff . --base origin/main` — non-zero exit on critical findings.
 
-## Known limits (be honest with early users)
+## Known limits 
 Rules are heuristic (regex + AST), not full semantic analysis: dynamic topic names,
 remaps in launch files and namespaces are not yet resolved. Next steps: launch-file/YAML
 parsing, TF-frame checks, tree-sitter for C++, then simulation-in-CI.
