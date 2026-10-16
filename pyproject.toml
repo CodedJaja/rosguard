@@ -1,0 +1,13 @@
+[project]
+name = "rosguard"
+version = "0.1.0"
+description = "AI code review + robotics safety checks for ROS 2 pull requests"
+requires-python = ">=3.10"
+dependencies = []
+[project.scripts]
+rosguard = "rosguard.cli:main"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["rosguard"]
